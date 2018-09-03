@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Dec  6 12:50:56 2017
+# Process ID: 3516
+# Current directory: D:/Study/USA_Graduate/WPI_Graduate_3/17_Fall_Courses/ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL/Project 1/Zhenyu Pan_ECE574_Project1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2936 D:\Study\USA_Graduate\WPI_Graduate_3\17_Fall_Courses\ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL\Project 1\Zhenyu Pan_ECE574_Project1\project1_combine_all.xpr
+# Log file: D:/Study/USA_Graduate/WPI_Graduate_3/17_Fall_Courses/ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL/Project 1/Zhenyu Pan_ECE574_Project1/vivado.log
+# Journal file: D:/Study/USA_Graduate/WPI_Graduate_3/17_Fall_Courses/ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL/Project 1/Zhenyu Pan_ECE574_Project1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Study/USA_Graduate/WPI_Graduate_3/17_Fall_Courses/ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Study/USA_Graduate/WPI_Graduate_3/17_Fall_Courses/ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL/Project 1/Zhenyu Pan_ECE574_Project1'
+INFO: [Project 1-313] Project file moved from 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_0' (customized with software release 2016.2) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Project 1-230] Project 'project1_combine_all.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 800.875 ; gain = 26.633
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  6 13:09:19 2017...

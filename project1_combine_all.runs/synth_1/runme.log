@@ -1,0 +1,567 @@
+
+*** Running vivado
+    with args -log TOP_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_module.tcl
+
+¾Ü¾ø·ÃÎÊ¡£
+
+****** Vivado v2017.2.1 (64-bit)
+  **** SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+  **** IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source TOP_module.tcl -notrace
+Command: synth_design -top TOP_module -part xc7a100tcsg324-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_0' (customized with software release 2016.2) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17596 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 321.109 ; gain = 67.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP_module' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/TOP_module.vhd:69]
+INFO: [Synth 8-3491] module 'MMCM_clock' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/MMCM_clock.vhd:36' bound to instance 'U0' of component 'MMCM_clock' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/TOP_module.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'MMCM_clock' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/MMCM_clock.vhd:45]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/synth_1/.Xil/Vivado-17400-ZhenyuPan/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'U_mmcm_clock' of component 'clk_wiz_0' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/MMCM_clock.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/synth_1/.Xil/Vivado-17400-ZhenyuPan/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-256] done synthesizing module 'MMCM_clock' (1#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/MMCM_clock.vhd:45]
+INFO: [Synth 8-3491] module 'decimal_counter' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/decimal_counter.vhd:36' bound to instance 'U1' of component 'decimal_counter' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/TOP_module.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'decimal_counter' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/decimal_counter.vhd:44]
+INFO: [Synth 8-3491] module 'clock_generate_4Hz' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/clock_generate_4Hz.vhd:36' bound to instance 'U_clock_generate_4Hz' of component 'clock_generate_4Hz' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/decimal_counter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'clock_generate_4Hz' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/clock_generate_4Hz.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'clock_generate_4Hz' (2#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/clock_generate_4Hz.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'decimal_counter' (3#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/decimal_counter.vhd:44]
+INFO: [Synth 8-3491] module 'VGA_DISPLAY' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/VGA_DISPLAY.vhd:36' bound to instance 'U2' of component 'VGA_DISPLAY' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/TOP_module.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'VGA_DISPLAY' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/VGA_DISPLAY.vhd:60]
+INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/vga_controller_640_60.vhd:75' bound to instance 'U1' of component 'vga_controller_640_60' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/VGA_DISPLAY.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (4#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-3491] module 'color_logic' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:27' bound to instance 'U2' of component 'color_logic' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/VGA_DISPLAY.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'color_logic' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:54]
+INFO: [Synth 8-3491] module 'position_convert' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/position_convert.vhd:26' bound to instance 'Ux' of component 'position_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'position_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/position_convert.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'position_convert' (5#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/position_convert.vhd:36]
+INFO: [Synth 8-3491] module 'position_convert' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/position_convert.vhd:26' bound to instance 'Uy' of component 'position_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:85]
+WARNING: [Synth 8-614] signal 'SW' is read in the process but is not in the sensitivity list [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:159]
+WARNING: [Synth 8-614] signal 'counter_yy' is read in the process but is not in the sensitivity list [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:159]
+WARNING: [Synth 8-614] signal 'counter_y' is read in the process but is not in the sensitivity list [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:159]
+WARNING: [Synth 8-614] signal 'counter_xx' is read in the process but is not in the sensitivity list [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:159]
+WARNING: [Synth 8-614] signal 'counter_x' is read in the process but is not in the sensitivity list [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'color_logic' (6#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'VGA_DISPLAY' (7#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/VGA_DISPLAY.vhd:60]
+INFO: [Synth 8-3491] module 'light_sensor' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/light_sensor.vhd:35' bound to instance 'U3' of component 'light_sensor' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/TOP_module.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'light_sensor' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/light_sensor.vhd:48]
+INFO: [Synth 8-3491] module 'clock_generate_1MHz' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/clock_generate_1MHz.vhd:26' bound to instance 'U1' of component 'clock_generate_1MHz' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/light_sensor.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'clock_generate_1MHz' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/clock_generate_1MHz.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'clock_generate_1MHz' (8#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/clock_generate_1MHz.vhd:33]
+INFO: [Synth 8-3491] module 'PmodALS' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/PmodALS.vhd:26' bound to instance 'U2' of component 'PmodALS' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/light_sensor.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'PmodALS' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/PmodALS.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'PmodALS' (9#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/PmodALS.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'light_sensor' (10#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/light_sensor.vhd:48]
+INFO: [Synth 8-3491] module 'seven_segment_display' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:36' bound to instance 'U4' of component 'seven_segment_display' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/TOP_module.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'seven_segment_display' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:54]
+INFO: [Synth 8-3491] module 'clock_generate_500Hz' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/clock_generate_500Hz.vhd:26' bound to instance 'U_clock_500Hz' of component 'clock_generate_500Hz' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'clock_generate_500Hz' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/clock_generate_500Hz.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'clock_generate_500Hz' (11#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/clock_generate_500Hz.vhd:34]
+INFO: [Synth 8-3491] module 'data_convert' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/data_convert.vhd:36' bound to instance 'U0' of component 'data_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'data_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/data_convert.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'data_convert' (12#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/data_convert.vhd:44]
+INFO: [Synth 8-3491] module 'data_convert' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/data_convert.vhd:36' bound to instance 'U1' of component 'data_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:88]
+INFO: [Synth 8-3491] module 'data_convert' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/data_convert.vhd:36' bound to instance 'U2' of component 'data_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:89]
+INFO: [Synth 8-3491] module 'data_convert' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/data_convert.vhd:36' bound to instance 'U3' of component 'data_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:90]
+INFO: [Synth 8-3491] module 'data_convert' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/data_convert.vhd:36' bound to instance 'U4' of component 'data_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:91]
+INFO: [Synth 8-3491] module 'data_convert' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/data_convert.vhd:36' bound to instance 'U5' of component 'data_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:92]
+INFO: [Synth 8-3491] module 'data_convert' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/data_convert.vhd:36' bound to instance 'U6' of component 'data_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:93]
+INFO: [Synth 8-3491] module 'data_convert' declared at 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/data_convert.vhd:36' bound to instance 'U7' of component 'data_convert' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:94]
+WARNING: [Synth 8-614] signal 'MEM_0' is read in the process but is not in the sensitivity list [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:110]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment_display' (13#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/seven_segment_display.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'TOP_module' (14#1) [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/TOP_module.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 362.188 ; gain = 108.246
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 362.188 ; gain = 108.246
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/synth_1/.Xil/Vivado-17400-ZhenyuPan/dcp3/clk_wiz_0_in_context.xdc] for cell 'U0/U_mmcm_clock'
+Finished Parsing XDC File [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/synth_1/.Xil/Vivado-17400-ZhenyuPan/dcp3/clk_wiz_0_in_context.xdc] for cell 'U0/U_mmcm_clock'
+Parsing XDC File [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/constrs_1/new/TOP_module.xdc]
+invalid command name "CONFIG_VOLTAGE"
+Finished Parsing XDC File [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/constrs_1/new/TOP_module.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/constrs_1/new/TOP_module.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 680.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_fpga. (constraint file  {D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/synth_1/.Xil/Vivado-17400-ZhenyuPan/dcp3/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_fpga. (constraint file  {D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/synth_1/.Xil/Vivado-17400-ZhenyuPan/dcp3/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for U0/U_mmcm_clock. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_4Hz_buffer" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element counter_l_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/decimal_counter.vhd:67]
+WARNING: [Synth 8-6014] Unused sequential element counter_h_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/decimal_counter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element hcounter_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/vga_controller_640_60.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element vcounter_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/vga_controller_640_60.vhd:129]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:232]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:255]
+INFO: [Synth 8-5546] ROM "clk_motion_control" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element counter_x_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element counter_y_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:81]
+WARNING: [Synth 8-6014] Unused sequential element position_X_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:84]
+WARNING: [Synth 8-6014] Unused sequential element position_Y_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:85]
+INFO: [Synth 8-5546] ROM "clk_motion_control" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_1MHz_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_500Hz_buffer" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'Red_reg' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:162]
+WARNING: [Synth 8-327] inferring latch for variable 'Green_reg' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:162]
+WARNING: [Synth 8-327] inferring latch for variable 'Blue_reg' [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:162]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 10    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 7     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 71    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 1     
+	  30 Input      1 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_generate_4Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module decimal_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module vga_controller_640_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module position_convert 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+Module color_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               23 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 68    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 1     
+	  30 Input      1 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 1     
+Module clock_generate_1MHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PmodALS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module clock_generate_500Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module data_convert 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+Module seven_segment_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "U2/clk_motion_control" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element U1/hcounter_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/vga_controller_640_60.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element U1/vcounter_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/vga_controller_640_60.vhd:129]
+WARNING: [Synth 8-6014] Unused sequential element U2/counter_y_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:81]
+WARNING: [Synth 8-6014] Unused sequential element U2/counter_x_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element U2/position_X_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:84]
+WARNING: [Synth 8-6014] Unused sequential element U2/position_Y_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/color_logic.vhd:85]
+INFO: [Synth 8-5546] ROM "U1/clk_1MHz_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U_clock_500Hz/clk_500Hz_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "U1/U_clock_generate_4Hz/clk_4Hz_buffer" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element U1/counter_l_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/decimal_counter.vhd:67]
+WARNING: [Synth 8-6014] Unused sequential element U1/counter_h_reg was removed.  [D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.srcs/sources_1/new/decimal_counter.vhd:80]
+INFO: [Synth 8-3886] merging instance 'U2/U2/Ux/position_h_reg[2]' (FDC) to 'U2/U2/Uy/position_h_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U2/U2/Ux/position_h_reg[3]' (FDC) to 'U2/U2/Uy/position_h_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U2/U2/Uy/position_h_reg[2]' (FDC) to 'U2/U2/Uy/position_h_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U2/U2/Uy/position_h_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U2/U2/counter_x_inferred__0 /\U2/U2/counter_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U2/U2/counter_x_inferred__0 /\U2/U2/counter_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U2/U2/counter_x_inferred__0 /\U2/U2/counter_x_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U2/U2/counter_x_inferred__0 /\U2/U2/counter_x_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U2/U2/counter_x_inferred__0 /\U2/U2/counter_x_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U2/U2/counter_y_inferred__0 /\U2/U2/counter_y_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U2/U2/counter_y_inferred__0 /\U2/U2/counter_y_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U2/U2/counter_y_inferred__0 /\U2/U2/counter_y_reg[2] )
+INFO: [Synth 8-3886] merging instance 'U2/U2/Blue_reg[0]' (LDC) to 'U2/U2/Blue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U2/U2/Blue_reg[1]' (LDC) to 'U2/U2/Blue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U2/U2/Blue_reg[2]' (LDC) to 'U2/U2/Blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U2/U2/Green_reg[0]' (LDC) to 'U2/U2/Green_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U2/U2/Green_reg[1]' (LDC) to 'U2/U2/Green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U2/U2/Green_reg[2]' (LDC) to 'U2/U2/Green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U2/U2/Red_reg[0]' (LDC) to 'U2/U2/Red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U2/U2/Red_reg[1]' (LDC) to 'U2/U2/Red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U2/U2/Red_reg[2]' (LDC) to 'U2/U2/Red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U4/U3/data_out_reg[0]' (FDP) to 'U4/U3/data_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U4/U1/data_out_reg[0]' (FDP) to 'U4/U1/data_out_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (U2/U2/counter_y_reg[2]) is unused and will be removed from module TOP_module.
+WARNING: [Synth 8-3332] Sequential element (U2/U2/counter_y_reg[1]) is unused and will be removed from module TOP_module.
+WARNING: [Synth 8-3332] Sequential element (U2/U2/counter_y_reg[0]) is unused and will be removed from module TOP_module.
+WARNING: [Synth 8-3332] Sequential element (U2/U2/counter_x_reg[4]) is unused and will be removed from module TOP_module.
+WARNING: [Synth 8-3332] Sequential element (U2/U2/counter_x_reg[3]) is unused and will be removed from module TOP_module.
+WARNING: [Synth 8-3332] Sequential element (U2/U2/counter_x_reg[2]) is unused and will be removed from module TOP_module.
+WARNING: [Synth 8-3332] Sequential element (U2/U2/counter_x_reg[1]) is unused and will be removed from module TOP_module.
+WARNING: [Synth 8-3332] Sequential element (U2/U2/counter_x_reg[0]) is unused and will be removed from module TOP_module.
+WARNING: [Synth 8-3332] Sequential element (U2/U2/Uy/position_h_reg[3]) is unused and will be removed from module TOP_module.
+WARNING: [Synth 8-3332] Sequential element (U4/U3/data_out_reg[1]) is unused and will be removed from module TOP_module.
+WARNING: [Synth 8-3332] Sequential element (U4/U1/data_out_reg[1]) is unused and will be removed from module TOP_module.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+------------------+---------------+----------------+
+|Module Name      | RTL Object       | Depth x Width | Implemented As | 
++-----------------+------------------+---------------+----------------+
+|position_convert | position_l       | 32x4          | LUT            | 
+|position_convert | position_h       | 32x2          | LUT            | 
+|VGA_DISPLAY      | U2/Ux/position_l | 32x4          | LUT            | 
+|VGA_DISPLAY      | U2/Ux/position_h | 32x2          | LUT            | 
+|VGA_DISPLAY      | U2/Uy/position_l | 32x4          | LUT            | 
+|VGA_DISPLAY      | U2/Uy/position_h | 32x2          | LUT            | 
++-----------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'U0/U_mmcm_clock/clk_25MHz' to pin 'U0/U_mmcm_clock/bbstub_clk_25MHz/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_0_bbox |     1|
+|2     |CARRY4         |    25|
+|3     |LUT1           |    82|
+|4     |LUT2           |   100|
+|5     |LUT3           |    70|
+|6     |LUT4           |   110|
+|7     |LUT5           |    47|
+|8     |LUT6           |    84|
+|9     |FDCE           |   169|
+|10    |FDPE           |    46|
+|11    |FDRE           |    25|
+|12    |LDC            |    10|
+|13    |IBUF           |    12|
+|14    |OBUF           |    32|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-------------------------+----------------------+------+
+|      |Instance                 |Module                |Cells |
++------+-------------------------+----------------------+------+
+|1     |top                      |                      |   814|
+|2     |  U0                     |MMCM_clock            |     2|
+|3     |  U1                     |decimal_counter       |   130|
+|4     |    U_clock_generate_4Hz |clock_generate_4Hz    |    99|
+|5     |  U2                     |VGA_DISPLAY           |   349|
+|6     |    U1                   |vga_controller_640_60 |   129|
+|7     |    U2                   |color_logic           |   220|
+|8     |      Ux                 |position_convert      |    14|
+|9     |      Uy                 |position_convert_7    |    14|
+|10    |  U3                     |light_sensor          |    40|
+|11    |    U1                   |clock_generate_1MHz   |    19|
+|12    |    U2                   |PmodALS               |    20|
+|13    |  U4                     |seven_segment_display |   249|
+|14    |    U0                   |data_convert          |    30|
+|15    |    U1                   |data_convert_0        |    11|
+|16    |    U2                   |data_convert_1        |    14|
+|17    |    U3                   |data_convert_2        |    12|
+|18    |    U4                   |data_convert_3        |    22|
+|19    |    U5                   |data_convert_4        |     7|
+|20    |    U6                   |data_convert_5        |    16|
+|21    |    U7                   |data_convert_6        |    15|
+|22    |    U_clock_500Hz        |clock_generate_500Hz  |    66|
++------+-------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 680.477 ; gain = 426.535
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 680.477 ; gain = 108.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 680.477 ; gain = 426.535
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  LDC => LDCE: 10 instances
+
+100 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 680.477 ; gain = 440.539
+INFO: [Common 17-1381] The checkpoint 'D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/synth_1/TOP_module.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 680.477 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 11 02:00:05 2017...
+¾Ü¾ø·ÃÎÊ¡£

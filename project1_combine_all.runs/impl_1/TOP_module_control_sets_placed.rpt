@@ -1,0 +1,107 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
+| Date         : Wed Oct 11 02:02:27 2017
+| Host         : ZhenyuPan running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_module_control_sets_placed.rpt
+| Design       : TOP_module
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    40 |
+| Unused register locations in slices containing registers |   222 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |             164 |           51 |
+| No           | Yes                   | No                     |              23 |           15 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              51 |           22 |
+| Yes          | Yes                   | No                     |              11 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+-----------------------------+----------------------------+------------------+----------------+
+|           Clock Signal          |        Enable Signal        |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++---------------------------------+-----------------------------+----------------------------+------------------+----------------+
+|  U0/U_mmcm_clock/inst/clk_25MHz |                             |                            |                1 |              1 |
+|  U0/U_mmcm_clock/inst/clk_25MHz |                             | U2/U1/HS0                  |                1 |              1 |
+|  U0/U_mmcm_clock/inst/clk_25MHz |                             | U2/U1/VS0                  |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     | U4/AN[7]_i_1_n_0            | U4/U0/seven_seg_reg[2]_P   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     | U4/AN[7]_i_1_n_0            | U4/U0/seven_seg_reg[3]_P   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     | U4/AN[7]_i_1_n_0            | U4/U0/seven_seg_reg[4]_P   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     | U4/AN[7]_i_1_n_0            | U4/U0/seven_seg_reg[5]_P   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     | U4/AN[7]_i_1_n_0            | U4/U0/seven_seg_reg[6]_P   |                1 |              1 |
+|  U4/U0/seven_seg_reg[0]_P       |                             | U4/U0/seven_seg_reg[0]_C   |                1 |              1 |
+|  U4/U0/seven_seg_reg[1]_P_0     |                             | U4/U0/seven_seg_reg[1]_C_0 |                1 |              1 |
+|  U2/U1/BLUE[3]_0                |                             | U2/U1/BLUE[3]_2            |                1 |              1 |
+|  U4/U0/seven_seg_reg[2]_P       |                             | U4/U0/seven_seg_reg[2]_C   |                1 |              1 |
+|  U4/U0/seven_seg_reg[3]_P       |                             | U4/U0/seven_seg_reg[3]_C   |                1 |              1 |
+|  U4/U0/seven_seg_reg[4]_P       |                             | U4/U0/seven_seg_reg[4]_C   |                1 |              1 |
+|  U4/U0/seven_seg_reg[5]_P       |                             | U4/U0/seven_seg_reg[5]_C   |                1 |              1 |
+|  U4/U0/seven_seg_reg[6]_P       |                             | U4/U0/seven_seg_reg[6]_C   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     |                             | U4/U0/seven_seg_reg[0]_C   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     |                             | U4/U0/seven_seg_reg[1]_C_0 |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     |                             | U4/U0/seven_seg_reg[2]_C   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     |                             | U4/U0/seven_seg_reg[3]_C   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     |                             | U4/U0/seven_seg_reg[4]_C   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     |                             | U4/U0/seven_seg_reg[5]_C   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     |                             | U4/U0/seven_seg_reg[6]_C   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     | U4/AN[7]_i_1_n_0            | U4/U0/seven_seg_reg[0]_P   |                1 |              1 |
+|  U4/U_clock_500Hz/clk_500Hz     | U4/AN[7]_i_1_n_0            | U4/U0/seven_seg_reg[1]_P_0 |                1 |              1 |
+|  U2/U1/RED[3]_0                 |                             | U2/U1/blank_out            |                1 |              2 |
+|  U1/U_clock_generate_4Hz/CLK    |                             | rst_IBUF                   |                1 |              4 |
+|  U1/U_clock_generate_4Hz/CLK    | U1/sel                      | rst_IBUF                   |                1 |              4 |
+|  U4/U_clock_500Hz/clk_500Hz     |                             | rst_IBUF                   |                3 |              4 |
+|  U2/U2/clk                      | U2/U2/position_X[4]_i_1_n_0 | rst_IBUF                   |                2 |              5 |
+|  U2/U2/clk                      | U2/U2/position_Y[4]_i_1_n_0 | rst_IBUF                   |                2 |              5 |
+|  U2/U2/clk                      | U2/U2/counter_x[10]_i_1_n_0 | rst_IBUF                   |                3 |              6 |
+|  U3/U1/CLK                      |                             | rst_IBUF                   |                2 |              6 |
+|  U2/U2/clk                      | U2/U2/counter_y[10]_i_1_n_0 | rst_IBUF                   |                2 |              8 |
+|  U3/U1/CLK                      | U3/U2/shift_register0_n_0   | rst_IBUF                   |                3 |              8 |
+|  U4/U_clock_500Hz/clk_500Hz     | U4/AN[7]_i_1_n_0            | rst_IBUF                   |                2 |              8 |
+|  U0/U_mmcm_clock/inst/clk_25MHz |                             | U2/U1/hcounter[10]_i_1_n_0 |                4 |             11 |
+|  U0/U_mmcm_clock/inst/clk_25MHz | U2/U1/vcounter[10]_i_2_n_0  | U2/U1/vcounter[10]_i_1_n_0 |                4 |             11 |
+|  U0/U_mmcm_clock/inst/clk_25MHz |                             | rst_IBUF                   |               10 |             36 |
+|  clk_fpga_IBUF_BUFG             |                             | rst_IBUF                   |               28 |            107 |
++---------------------------------+-----------------------------+----------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    25 |
+| 2      |                     1 |
+| 4      |                     3 |
+| 5      |                     2 |
+| 6      |                     2 |
+| 8      |                     3 |
+| 11     |                     2 |
+| 16+    |                     2 |
++--------+-----------------------+
+
+

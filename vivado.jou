@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Dec  6 12:50:56 2017
+# Process ID: 3516
+# Current directory: D:/Study/USA_Graduate/WPI_Graduate_3/17_Fall_Courses/ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL/Project 1/Zhenyu Pan_ECE574_Project1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2936 D:\Study\USA_Graduate\WPI_Graduate_3\17_Fall_Courses\ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL\Project 1\Zhenyu Pan_ECE574_Project1\project1_combine_all.xpr
+# Log file: D:/Study/USA_Graduate/WPI_Graduate_3/17_Fall_Courses/ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL/Project 1/Zhenyu Pan_ECE574_Project1/vivado.log
+# Journal file: D:/Study/USA_Graduate/WPI_Graduate_3/17_Fall_Courses/ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL/Project 1/Zhenyu Pan_ECE574_Project1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Study/USA_Graduate/WPI_Graduate_3/17_Fall_Courses/ECE574_MODELING_AND_SYNTHESIS_OF_DIGITAL_SYSTEMS_USING_VERILOG_AND_VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.xpr}
+update_compile_order -fileset sources_1

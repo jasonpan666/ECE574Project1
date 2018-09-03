@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="impl_1" LaunchDir="D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream"/>
+</Runs>
+

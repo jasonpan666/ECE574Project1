@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Tue Oct 10 14:39:58 2017
+# Process ID: 20932
+# Current directory: D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/impl_1
+# Command line: vivado.exe -log TOP_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP_module.tcl -notrace
+# Log file: D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/impl_1/TOP_module.vdi
+# Journal file: D:/Study/USA Graduate/WPI Graduate 3/17 Fall Courses/ECE574 MODELING AND SYNTHESIS OF DIGITAL SYSTEMS USING VERILOG AND VHDL/Project 1/Zhenyu Pan_ECE574_Project1/project1_combine_all.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_module.tcl -notrace
